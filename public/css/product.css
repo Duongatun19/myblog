@@ -1,0 +1,11 @@
+.item-product{
+    background-color: red;
+    height: 450px;
+    width: 370px; 
+}
+.product{
+    width: 1920px;
+}
+.product div{
+   margin-left: 10px;
+}

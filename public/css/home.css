@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.big-body {
+
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+.layout-header {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.bar {
+    position: absolute;
+    color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {}
+
+.menu {
+    position: absolute;
+    ;
+    display: flex;
+    right: 30px;
+}
+
+.menu div {
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.item-menu {
+    cursor: pointer;
+}
