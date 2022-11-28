@@ -22,24 +22,29 @@
 }
 
 .bar {
-    position: absolute;
+    position: absolute;;
     color: white;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     width: 100%;
+
 }
 
 .logo {}
 
-.menu {
-    position: absolute;
-    ;
+.menu-home{
+    position: fixed;
+font-weight: 600;
     display: flex;
     right: 30px;
 }
-
-.menu div {
+.item-menu:hover{
+    color: rgb(255, 145, 0);
+    transition: all 0.5s ease-in-out;
+    
+}
+.menu-home div {
     padding-right: 30px;
     padding-top: 20px;
 }

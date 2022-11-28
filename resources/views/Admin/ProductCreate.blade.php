@@ -55,12 +55,14 @@
             </select>
             <label for="">Animation</label>
             <select name="animation_id" id="">
+                <option value="">--Chọn Hiệu Ứng ---</option>
                 @foreach ($animation as $item)
                     <option value="{{ $item->id }}">{{ $item->name }}</option>
                 @endforeach
             </select>
             <label for="">Delay</label>
             <select name="delay_id" id="">
+                <option value="">--Thời Gian Thực Hiện Hiệu Ứng --</option>
                 @foreach ($delays as $item)
                     <option value="{{ $item->id }}">{{ $item->name }}</option>
                 @endforeach
@@ -69,8 +71,8 @@
             <br>
             <label for="">Trạng Thái</label>
             <select name="status" id="">
-                <option value="0">ON</option>
-                <option value="1">OFF</option>
+                <option value="1">ON</option>
+                <option value="0">OFF</option>
             </select>
             <br>
             <br>

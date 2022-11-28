@@ -11,6 +11,7 @@ use App\Http\Controllers\AdminController\ProductController;
 use App\Http\Controllers\AnimationController;
 use App\Http\Controllers\ChangeSttController;
 use App\Http\Controllers\WebsiteController\HomeController;
+use App\Http\Controllers\WebsiteController\ProductwebController;
 use App\Models\Animation;
 use App\Models\Horizontalmenu;
 use Illuminate\Support\Facades\Route;
@@ -29,6 +30,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[HomeController::class, 'Home'])->name('Home');
 // Admin
 Route::get('/admin',[AdHomeController::class,'HomeAdmin'])->name('HomeAdmin');
+Route::get('/website',[HomeController::class,'website'])->name('website');
 //@ParentCategory
 Route::get('/Admin/ListParentCategory', [AdCategoryController::class,'ListParentCategory'])->name('ParentCategory');
 Route::get('/Admin/PageAddParentCategory',[AdCategoryController::class,'PageAddParentCategory'])->name('PageAddParentCategory');
@@ -87,6 +89,10 @@ Route::post('Admin/AddDelay',[DelayController::class,'AddDelay'])->name('AddDela
 Route::delete('Admin/delete_delay/{id}',[DelayController::class,'delete_delay']) ->name('delete_delay');
 Route::get('Admin/edit_delay/{id}',[DelayController::class,'edit_delay']) ->name('edit_delay');
 Route::put('Admin/update_delay/{id}',[DelayController::class,'update_delay'])->name('update_delay');
+//@chi tiết sản phẩm
+Route::get('website/info-products/{id}',[ProductwebController::class,'info_product'])->name('info_product');
+Route::get('website/list-category/{id}',[ProductwebController::class,'list_category'])->name('list.category');
+
 
 
 

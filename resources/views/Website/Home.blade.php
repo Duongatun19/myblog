@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('/css/animationcustom.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -23,7 +24,7 @@
                 <div class="logo">
                     <img src="/uploads/logo1.png" alt="" srcset="" width="150px" height="150px">
                 </div>
-                <div class="menu">
+                <div class="menu-home">
                     @include('Website/menungang')
                 </div>
             </div>
@@ -33,9 +34,20 @@
                 @endforeach
             </div>
         </div>
-        <div class="center-content">
-            @include('Website/FileIPA')
+        <div class="content">
+            @include('Website/product-line1')
+            @include('Website/product-line2')
+            @include('Website/product-line3')
+            @include('Website/product-line4')
+            @include('Website/product-line5')
+            @include('Website/product-line6')
+            @include('Website/product-line7')
+      
         </div>
+        
+    </div>
+    <div>
+        @include('Website/footer')
     </div>
     <script src="https://kit.fontawesome.com/dc8bdf0c28.js" crossorigin="anonymous"></script>
 

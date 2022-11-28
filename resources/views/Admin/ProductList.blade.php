@@ -36,7 +36,7 @@
                 <tbody>
                     <td>{{ $item->id }}</td>
                     <td>{{ $item->titleproduct }}</td>
-                    <td><img src="/uploads/{{ $item->imgproduct }}" alt="" srcset="" width="100px"
+                    <td class="set-img"><img src="/uploads/{{ $item->imgproduct }}" alt="" srcset="" width="100px"
                             height="150px"></td>
                     <td>{{ $item->link }}</td>
                     <td>{{ $item->ProductMenu->namemenu }}</td>

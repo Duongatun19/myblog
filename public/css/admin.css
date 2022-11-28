@@ -9,6 +9,9 @@ flex-wrap: nowrap !important;
 .input-add{
     width: 100%;
 }
+.set-img img{
+    object-fit: cover !important;
+}
 .toggle-off{
     background-color: red !important;
     color: wheat !important;

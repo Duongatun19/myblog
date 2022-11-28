@@ -1,0 +1,16 @@
+.menuweb{
+    width: 100%;
+    height: auto !important;
+    background-color: rgb(41, 38, 38);
+    height: 500px !important;
+    color: aliceblue;
+}   
+    .item-menu{
+        width: 100% !important;
+        cursor: pointer;
+        height:50px;
+        padding: 20px 40px ;
+    }
+    .item-menu:hover{
+        color: orangered;
+    }

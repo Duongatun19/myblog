@@ -38,7 +38,7 @@
                     <td>{{ $item->HozAnimation->name}}</td>
                     <td>{{$item->HozDelay->name}}</td>
                     <td>
-                        <input type="checkbox" class="toggle-class" data-id="{{ $item->id }}" data-toggle="toggle"
+                        <input type="checkbox" class="toggle-hoz" data-id="{{ $item->id }}" data-toggle="toggle"
                         data-style="slow" data-on="Enabled"
                         data-off="Disabled"{{ $item->status == true ? 'checked' : '' }}>
                     </td>

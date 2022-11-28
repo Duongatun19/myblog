@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('titleproduct');
             $table->string('slugproduct');
             $table->string('category_id');
-            $table->integer('animation_id')->unsigned();
-            $table->integer('delay_id')->unsigned();
+            $table->integer('animation_id')->unsigned()->nullable();
+            $table->integer('delay_id')->unsigned()->nullable();
             $table->string('status');
             $table->string('imgproduct');
             $table->string('link');

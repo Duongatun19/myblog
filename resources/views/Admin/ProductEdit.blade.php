@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="container mt-5 input-add">
-        <form action="{{ route('update_product', $items->id) }}" method="post">
+        <form action="{{ route('update_product', $items->id) }}" method="post" enctype="multipart/form-data">
             @csrf
             @method('PUT')
             <input type="text" name="titleproduct" placeholder="Enter Name Product" id="slug"
@@ -61,6 +61,7 @@
 
             <select name="animation_id" id="">
                 @foreach ($animation as $item)
+                <option value="">--Chọn Hiệu Ứng --</option>
                     <option {{ $item->id == $items->animation_id ? 'selected' : '' }} value="{{ $item->id }}">
                         {{ $item->name }}</option>
                 @endforeach
@@ -68,6 +69,7 @@
             <label for="">Delay</label>
 
             <select name="delay_id" id="">
+                <option value="">--Thời Gian Thực Hiện Hiệu Ứng --</option>
                 @foreach ($delays as $item)
                     <option {{ $item->id == $items->delay_id ? 'selected' : '' }} value="{{ $item->id }}">
                         {{ $item->name }}</option>
@@ -83,8 +85,8 @@
                 </select>
             @else
                 <select name="status" id="">
-                    <option value="0">ON</option>
-                    <option selected value="1">OFF</option>
+                    <option value="1">ON</option>
+                    <option selected value="0">OFF</option>
                 </select>
             @endif
             <br>

@@ -1,11 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 .item-product{
-    background-color: red;
-    height: 450px;
-    width: 370px; 
+    background-color: rgb(44, 47, 50);
+    z-index: 1;
+    width: 100% !important;
+}   
+
+
+/* .product-home{
+    object-fit: cover !important;
+    height: 300px !important;
+    width: 300px;
+  
+} */
+
+.content-product{
+    /* width: 100% !important; */
+    padding-top: 15px !important;
+    padding-bottom: 50px;
+
+    
 }
-.product{
-    width: 1920px;
+.owl-nav {
+    color: red;
+    font-size: 70px;
+    display: flex;
+    background-color: #f0f8ff00;
+    position: absolute;
+    top: -90px;
+    right: 30px;
 }
-.product div{
-   margin-left: 10px;
+.owl-prev:hover{
+    color: rgb(162, 7, 7) !important;
+}
+.owl-next:hover{
+    color: rgb(162, 7, 7) !important;
+}
+.over-lay{
+    position: absolute;
+    background-color: rgba(245, 6, 6, 0.935);
+    display: none;
+    width: 200px;
+    height: 190px;
+    border-radius: 30px;
+    margin-top: -20px;
+    margin-left: -20px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(129, 122, 113);
+}
+.over-lay p{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.img-product:hover .over-lay{
+   content: "";
+   position: absolute;
+   background-color: rgba(236, 236, 236, 0.725);
+  display: block    ;
+}
+.img-product:hover{
+    transform: scale(0.9);
+    transition: all 0.75s;
+    /* box-shadow: #e4dfde 1px -2px 75px 6px;  */
+}
+.owl-stage{
+    transform: translate3d(-2730px, 0px, 0px) ;
+    transition: all 0.25s ease 0s;
+    width: auto !important;
+    display: flex;
+}
+.img-product{
+    background-color: rgb(105, 93, 93);
+    margin-left: 20px !important;
+    border-radius: 30px;
+    padding: 20px 20px ;
+}
+.img-product img{
+   
+    height: 150px !important;
+    width: 150px !important;
+    object-fit: cover   ;
+}
+.owl-item{
+    width: 230px !important;
+}
+.custom-h1{
+ 
+   padding: 10px 30px ;
+   color: rgb(255, 136, 1);
+   font-family: 'Roboto Slab', serif;
+   font-weight: 900;
+   font-size: 25px !important;
+   position: relative !important;
+  
+}
+
+
+.custom-h1::before{
+    content: "";
+    width: 7px;
+    height:25px;
+    background-color: rgb(255, 98, 0);
+    position: absolute;
+     z-index: 1 !important;
+    top:12px;
+    left: 10px;
+    border-radius: 4px ;
+
 }
